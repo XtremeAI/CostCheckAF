@@ -81,8 +81,6 @@ namespace IFX.ResCost
             log.LogInformation($"Function successfully executed on {DateTime.Now}");
             
             return (ActionResult)new OkObjectResult($"Total consumed cost of the selected resources is: {consumptionCostSummary} EUR");
-
         }
-
     }
 }
