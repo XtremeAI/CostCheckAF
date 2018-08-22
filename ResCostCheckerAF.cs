@@ -78,7 +78,10 @@ namespace IFX.ResCost
                 return new BadRequestObjectResult("Something went wrong! Please check the log.");
             }
 
+            log.LogInformation($"Function successfully executed on {DateTime.Now}");
+            
             return (ActionResult)new OkObjectResult($"Total consumed cost of the selected resources is: {consumptionCostSummary} EUR");
+
         }
 
     }
