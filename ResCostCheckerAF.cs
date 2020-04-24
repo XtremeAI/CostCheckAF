@@ -98,7 +98,7 @@ namespace IFX.CostManagement
       string from = req.Query["from"];
       string to = req.Query["tag"];
 
-      string jsonStr = await new StreamReader($"{context.FunctionDirectory}\\request-body.json").ReadToEndAsync();
+      string jsonStr = await new StreamReader($"{context.FunctionAppDirectory}\\request-body.json").ReadToEndAsync();
       dynamic payload = JsonConvert.DeserializeObject(jsonStr);
 
       if (from == null && to == null) {
