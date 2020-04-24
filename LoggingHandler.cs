@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace IFX.ResCost
+namespace IFX.CostManagement
 {
     // LoggingHandler derived from http://stackoverflow.com/questions/12300458/web-api-audit-logging
     public class LoggingHandler : DelegatingHandler
