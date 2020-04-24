@@ -109,6 +109,7 @@ namespace IFX.CostManagement
       }
 
       var uri = $"{armUri}{scope}{apiSfx}";
+      log.LogInformation($"Url to call: ${uri}");
 
       var consumptionCostSummary = 0.0;
 
